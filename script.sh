@@ -7,6 +7,6 @@ echo "sql not running"
 exit 1
 else 
 currentdate=`date +%d%m%Y_%H%M`
-mysql_dump=`mysqldump -u luk -ppassword lukva >date_$currentdate.sql`
+mysql_dump=`mysqldump -u luk -p$PASS lukva >date_$currentdate.sql`
 fi
 
